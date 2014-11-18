@@ -1,21 +1,151 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlertController___Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="zJU-lK-Up6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52T-hp-cqb">
+                                <rect key="frame" x="205" y="124" width="75" height="30"/>
+                                <state key="normal" title="常规对话框">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn_UIAlertView_DefaultStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5lx-vA-NLe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIAlertView" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dz-3B-qpp">
+                                <rect key="frame" x="249" y="229" width="102" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpZ-YY-bs5">
+                                <rect key="frame" x="205" y="184" width="75" height="30"/>
+                                <state key="normal" title="密码对话框">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn_UIAlertView_SecureTextStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Yn-8i-kYt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwd-dN-Zbi">
+                                <rect key="frame" x="320" y="184" width="75" height="30"/>
+                                <state key="normal" title="登录对话框">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn_UIAlertView_LoginAndPasswordStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Glm-Dw-FfM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMR-zh-Aeg">
+                                <rect key="frame" x="320" y="124" width="75" height="30"/>
+                                <state key="normal" title="文本对话框">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn_UIAlertView_PlainTextStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dlf-bv-YEA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIAlertController" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07q-zJ-27n">
+                                <rect key="frame" x="227" y="346" width="146" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fH8-IQ-PfR">
+                                <rect key="frame" x="205" y="385" width="75" height="30"/>
+                                <state key="normal" title="基本对话框">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn_UIAlertController_BasicAlertStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ibP-q3-cpq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmp-cX-fGU">
+                                <rect key="frame" x="320" y="385" width="75" height="30"/>
+                                <state key="normal" title="重置对话框">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn_UIAlertController_DestructiveActions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9NA-1H-IJR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9P-sr-2TG">
+                                <rect key="frame" x="327" y="445" width="60" height="30"/>
+                                <state key="normal" title="上拉菜单">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn_UIAlertController_ActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FA0-dE-1Al"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlertController示例程序" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ww-wd-Z66">
+                                <rect key="frame" x="162" y="283" width="277" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSl-ev-w3t">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uph-OT-Bfs">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2N2-Kc-JpG">
+                                <rect key="frame" x="205" y="445" width="75" height="30"/>
+                                <state key="normal" title="登录对话框">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Btn_UIAlertController_LoginAndPasswordStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a35-R8-rGu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4ww-wd-Z66" secondAttribute="centerX" id="2io-qv-SU9"/>
+                            <constraint firstItem="zmp-cX-fGU" firstAttribute="centerX" secondItem="W9P-sr-2TG" secondAttribute="centerX" id="7y6-o7-Vs3"/>
+                            <constraint firstItem="fH8-IQ-PfR" firstAttribute="centerY" secondItem="zmp-cX-fGU" secondAttribute="centerY" id="AtG-se-KLh"/>
+                            <constraint firstItem="fH8-IQ-PfR" firstAttribute="centerX" secondItem="2N2-Kc-JpG" secondAttribute="centerX" id="DN4-4N-Vnb"/>
+                            <constraint firstItem="9dz-3B-qpp" firstAttribute="top" secondItem="Uph-OT-Bfs" secondAttribute="bottom" constant="30" id="DOv-TG-mnW"/>
+                            <constraint firstItem="52T-hp-cqb" firstAttribute="centerX" secondItem="NpZ-YY-bs5" secondAttribute="centerX" id="DRz-XM-6ee"/>
+                            <constraint firstItem="mSl-ev-w3t" firstAttribute="leading" secondItem="fH8-IQ-PfR" secondAttribute="trailing" constant="20" id="Dh3-hm-2xo"/>
+                            <constraint firstAttribute="centerX" secondItem="mSl-ev-w3t" secondAttribute="centerX" id="RDY-1g-dfL"/>
+                            <constraint firstItem="2N2-Kc-JpG" firstAttribute="top" secondItem="fH8-IQ-PfR" secondAttribute="bottom" constant="30" id="Tgm-SF-IoL"/>
+                            <constraint firstItem="Uph-OT-Bfs" firstAttribute="centerY" secondItem="Jwd-dN-Zbi" secondAttribute="centerY" id="Z2c-zA-C8t"/>
+                            <constraint firstItem="mSl-ev-w3t" firstAttribute="top" secondItem="07q-zJ-27n" secondAttribute="bottom" constant="30" id="bb3-GH-HP8"/>
+                            <constraint firstItem="4ww-wd-Z66" firstAttribute="top" secondItem="9dz-3B-qpp" secondAttribute="bottom" constant="30" id="hDa-84-Q16"/>
+                            <constraint firstItem="W9P-sr-2TG" firstAttribute="top" secondItem="zmp-cX-fGU" secondAttribute="bottom" constant="30" id="l1k-vh-eQf"/>
+                            <constraint firstItem="Uph-OT-Bfs" firstAttribute="leading" secondItem="NpZ-YY-bs5" secondAttribute="trailing" constant="20" id="lAK-i7-tsW"/>
+                            <constraint firstItem="aMR-zh-Aeg" firstAttribute="centerX" secondItem="Jwd-dN-Zbi" secondAttribute="centerX" id="lDJ-Be-PsM"/>
+                            <constraint firstAttribute="centerX" secondItem="07q-zJ-27n" secondAttribute="centerX" id="ntL-ZC-0Wz"/>
+                            <constraint firstItem="07q-zJ-27n" firstAttribute="top" secondItem="4ww-wd-Z66" secondAttribute="bottom" constant="30" id="oYB-yv-r1U"/>
+                            <constraint firstItem="Jwd-dN-Zbi" firstAttribute="leading" secondItem="Uph-OT-Bfs" secondAttribute="trailing" constant="20" id="obU-o8-A59"/>
+                            <constraint firstAttribute="centerX" secondItem="9dz-3B-qpp" secondAttribute="centerX" id="p9G-Da-Scd"/>
+                            <constraint firstItem="Jwd-dN-Zbi" firstAttribute="top" secondItem="aMR-zh-Aeg" secondAttribute="bottom" constant="30" id="pd6-2e-zGn"/>
+                            <constraint firstAttribute="centerY" secondItem="4ww-wd-Z66" secondAttribute="centerY" id="prC-S8-79B"/>
+                            <constraint firstAttribute="centerX" secondItem="Uph-OT-Bfs" secondAttribute="centerX" id="teu-pA-iJh"/>
+                            <constraint firstItem="NpZ-YY-bs5" firstAttribute="top" secondItem="52T-hp-cqb" secondAttribute="bottom" constant="30" id="wNF-1E-1pu"/>
+                            <constraint firstItem="fH8-IQ-PfR" firstAttribute="centerY" secondItem="mSl-ev-w3t" secondAttribute="centerY" id="yph-VZ-KgO"/>
+                            <constraint firstItem="Uph-OT-Bfs" firstAttribute="centerY" secondItem="NpZ-YY-bs5" secondAttribute="centerY" id="z1D-a1-Cyc"/>
+                            <constraint firstItem="zmp-cX-fGU" firstAttribute="leading" secondItem="mSl-ev-w3t" secondAttribute="trailing" constant="20" id="zpd-Nj-To0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
