@@ -125,12 +125,12 @@ class ViewController: UIViewController {
     }
     
     func alertTextFieldDidChange(notification: NSNotification){
-        var alertController = self.presentedViewController as UIAlertController?
+        var alertController = self.presentedViewController as! UIAlertController?
         
         if alertController != nil {
-            var login = alertController!.textFields?.first as UITextField
-            var loginAction = alertController!.actions.last as UIAlertAction
-            loginAction.enabled = countElements(login.text) > 2
+            var login = alertController!.textFields?.first as! UITextField
+            var loginAction = alertController!.actions.last as! UIAlertAction
+            loginAction.enabled = count(login.text) > 2
         }
     }
     
